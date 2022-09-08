@@ -3,13 +3,9 @@
 
 
 /**
-
  * main - Entry point
-
- *
-
+ * description: size of differnt c type
  * Return: Always 0 (Success)
-
  */
 
 int main(void)
