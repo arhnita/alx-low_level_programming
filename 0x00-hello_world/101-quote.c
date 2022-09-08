@@ -2,22 +2,19 @@
 
 #include <unistd.h>
 
-
-
 /**
- * main - a genuis to understand the simplicity
- * description: a script that prints the exact output)
- * Return: 1
+ * main - Prints out the last part of a quote in the standard error.
+ * Return: 1 if success.
  */
 
 int main(void)
 
 {
 
-		write(1, "and that piece of art is useful
-
-							\" - Dora Korpar, 2015-10-19\n", 59);
+		write(2, "and that piece of art is useful - Dora Korpar, 2015-10-19\n", 58);
 
 			return (1);
 
 }
+
+
