@@ -3,7 +3,7 @@
 
 /**
  * main - main function in task
- * Return 1 success
+ * Return: 1 success
  */
 
 int main(void)
