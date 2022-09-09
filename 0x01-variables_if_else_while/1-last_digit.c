@@ -6,7 +6,7 @@
  * description: print last digit of
  * Return: always 0 (success)
  */
-int main (void)
+int main(void)
 {
 	int n;
 	int L;
