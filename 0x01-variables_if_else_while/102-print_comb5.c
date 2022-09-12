@@ -6,26 +6,26 @@
  */
 int main(void)
 {
-	int digit1;
-	int digit2;
+	int dig1;
+	int dig2;
 
-	for (digit1 == 0; digit1 <= 98; digit1++)
+	for (dig1 = 0; dig1 <= 98; dig1++)
 	{
-		for (digit2 == digit1 + 1; digit2 <= 99; digit2++)
+		for (dig2 = dig1 + 1; dig2 <= 99; dig2++)
 		{
-			putchar((digit1 / 10) +  '0');
-			putchar((digit1 % 10) + '0');
+			putchar((dig1 / 10) +  '0');
+			putchar((dig1 % 10) + '0');
 			putchar(' ');
-			putchar((digit2 / 10) + '0');
-			putchar((digit2 % 10) + '0');
+			putchar((dig2 / 10) + '0');
+			putchar((dig2 % 10) + '0');
 
-			if (digit1 == 98 && digit2 == 99)
+			if (dig1 == 98 && dig2 == 99)
 			{
 				continue;
 			}
 			
 			putchar(',');
-			puchar(' ');
+			putchar(' ');
 		}
 	}
 
