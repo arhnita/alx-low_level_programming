@@ -6,15 +6,16 @@
  */
 int main(void)
 {
-	char *p = "_putchar";
+	_putchar('_');
+	_putchar('p');
+	_putchar('u');
+	_putchar('t');
+	_putchar('c');
+	_putchar('h');
+	_putchar('a');
+	_putchar('r');
 
-	while (*p)
-	{
-	 _putchar(*p);
-	 p++;
-	}
-
-	_putchar("\n");
+	_puchar('\n');
 
 	return (0);
 }
