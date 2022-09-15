@@ -1,10 +1,11 @@
 #include <stdio.h>
+#include <stdlib.h>
 /**
- * main- prints the numbers from 1 - 100
- * Fizz- for multiples of three
- * Buzz - for multiples of five
- * FizzBuzz - for multiples of three and five
- * Return: no return value
+ * main- prints the numbers from 1-100
+ * 3 multiples print Fizz
+ * 5 multiples print Buzz
+ * 3 and 5 print FizzBuzz
+ * Return: Always 0 (success)
  */
 int main(void)
 {
@@ -26,11 +27,6 @@ int main(void)
 		else
 			printf("%d ", i);
 	}
-	printf('\n');
-
+	printf("\n");
 	return (0);
-}
-
-
-
 }
