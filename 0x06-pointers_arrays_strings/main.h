@@ -2,6 +2,11 @@
 #define MAIN_H
 
 #include <stdio.h>
+/**
+ * void prototypes()
+ * int prototypes()
+ * char prototypes()
+ */
 
 int _putchar(char c);
 char *_strcat(char *dest, char *src);
