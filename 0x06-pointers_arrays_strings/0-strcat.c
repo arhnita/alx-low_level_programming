@@ -1,27 +1,28 @@
 #include "main.h"
 
 /**
- * *_strcat - concatenates @src to @dest
- * @src: the source string to append to @dest
- * @dest: the destination string to be concatenated upon
- * Return: pointer to the resulting string
+ * *_strcat - function commute strings
+ * @dest: param pointer to a char
+ * @src: param pointer to a char
+ * Return: return value of dest
  */
 
 char *_strcat(char *dest, char *src)
 {
-	int count = 0, count2 = 0;
+	int length, j;
 
-	while (*(dest + count) != '\0')
+	length = 0;
+
+	while (dest[length] != '\0')
 	{
-		count++;
+		length++;
 	}
-	while (count2 >= 0)
+	for (j = 0; src[j] != '\0'; j++)
 	{
-		*(dest + count) = *(src + count2);
-		if (*(src + count2) == '\0')
-			break;
-		count++;
-		count2++;
+		dest[length] = src[j];
+		length++;
 	}
+	dest[length] = '\0';
+
 	return (dest);
 }
