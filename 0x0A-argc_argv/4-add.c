@@ -7,7 +7,7 @@
  * main - program that takes in all integer arguments and return the sum
  * @argc: Number of command line arguments
  * @argv: Array that contains program
- * @Return: 1 if a non integer, 0 if otherwise
+ * Return: 1 if a non-integer is among the passed in arguments, 0 otherwise
  */
 int main(int argc, char *argv[])
 {
