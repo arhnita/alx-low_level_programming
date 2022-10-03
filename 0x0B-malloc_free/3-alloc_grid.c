@@ -8,40 +8,34 @@
  */
 int **alloc_grid(int width, int height)
 {
-	int i, j, a, b;
-	int **p;
+	int **twoD;
+	int hgt_index, wid_index;
 
 	if (width <= 0 || height <= 0)
-	{
 		return (NULL);
-	}
-	else
+
+	twoD = malloc(sizeof(int *) * height);
+
+	if (twoD == NULL)
+		return (NULL);
+
+	for (hgt_index = 0; hgt_index < height; hgt_index++)
 	{
-		p = (int **) malloc(height * sizeof(int *));
-		/* we have to make a malloc per pointer */
-		if (!p)
+		twoD[hgt_index] = malloc(sizeof(int) * width);
+
+		if (twoD[hgt_index] == NULL)
 		{
-			free(p);
+			for (; hgt_index >= 0; hgt_index--)
+				free(twoD[hgt_index]);
+			free(twoD);
 			return (NULL);
 		}
-		for (i = 0; i < height; i++)
-		{
-			p[i] = (int *) malloc(width * sizeof(int));
-			if (!p[i])
-			{
-				for (j = 0; j <= i; j++)
-					free(p);
-				return (NULL);
-			}
-		}
-		for (a = 0; a < height; a++)
-		{
-			for (b = 0; b < width; b++)
-			{
-				p[a][b] = 0;
-			}
-		}
-		return (p);
 	}
+	for (hgt_index = 0; hgt_index < height; hgt_index++)
+	{
+		for (wid_index = 0; wid_index < width; wid_index++)
+			twoD[hgt_index][wid_index] = 0;
+	}
+	return (twoD);
 }
 
