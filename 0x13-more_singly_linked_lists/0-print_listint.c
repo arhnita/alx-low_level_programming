@@ -1,5 +1,6 @@
 #include "lists.h"
 #include <stdio.h>
+#include <stdlib.h>
 /**
  * print_listint - prints all elements
  * @h: pointer to the head
@@ -7,13 +8,18 @@
  */
 size_t print_listint(const listint_t *h)
 {
-	size_t nodes = 0;
+	size_t count = 0;
 
-	while (h)
+	if (h == NULL)
 	{
-		nodes++;
-		printf("%d\n", h->n);
-		h = h->next;
+		return (count);
 	}
-	return (nodes);
+
+	for (; h != NULL; h = h->next)
+	{
+		printf("%d\n", h->n);
+		count++;
+	}
+
+	return (count);
 }
