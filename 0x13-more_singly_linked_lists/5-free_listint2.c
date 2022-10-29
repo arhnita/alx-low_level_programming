@@ -1,6 +1,5 @@
 #include "lists.h"
-#include <stdio.h>
-#include <stdlib.h>
+
 /**
  * free_listint2 - function that frees a listint
  * @head: double pointer to list to be freed
